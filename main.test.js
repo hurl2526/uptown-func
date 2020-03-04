@@ -35,8 +35,7 @@ describe('callTwice', () => {
 
     const mockFunc = jest.fn(return5);
 
-    call(mockFunc);
-    call(mockFunc);
+    callTwice(mockFunc);
     expect(mockFunc.mock.calls.length).toBe(2)
   })
 });
